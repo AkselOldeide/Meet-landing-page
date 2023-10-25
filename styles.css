@@ -17,11 +17,24 @@ h1 {
     color: #28283D;
 }
 
+
+
+
 h2 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 44px;
-    color: #28283D;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 26px;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-size: 16;
+    font-weight: 500;
+    line-height: 26px;
+    color: #87879D;
+    text-align: center;
 }
 
 .overline {
@@ -72,4 +85,24 @@ h2 {
     cursor: pointer;
     background-color: #B18BDD;
 
+}
+
+   /* Small (sm) */
+   @media (min-width: 640px) {
+}
+/* Medium (md) */
+@media (min-width: 768px) {
+    /* Your styles for the medium breakpoint here */
+}
+/* Large (lg) */
+@media (min-width: 1024px) {
+    /* Your styles for the large breakpoint here */
+}
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    /* Your styles for the extra large breakpoint here */
+}
+/* 2XL (2xl) */
+@media (min-width: 1536px) {
+    /* Your styles for the 2XL breakpoint here */
 }
