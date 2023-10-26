@@ -29,22 +29,17 @@ body {
 
 .main-text {
     position: relative;
-    margin-top: 160px;
 }
 
-.hero-left img {
+.top-images {
+    display: flex;
+    gap: 20px;
+}
+
+.top-images img {
     width: 199px;
     height: 153px;
     gap: 20px;
-    position: absolute;
-    left: 0;
-}
-
-.hero-right img {
-    width: 199px;
-    height: 153px;
-    position: absolute;
-    right: 0;
 }
 
 .introduction {
@@ -214,16 +209,15 @@ article#smarter-meetings-description {
     margin: 0;
 }
 
-
 /* Small (sm) */
 @media (min-width: 640px) {}
 
-/* Medium (md) */
-@media (min-width: 768px) {
-    .main-text {
-        margin-top: 330px;
-    }
+span{
+    padding-right: 4px;
 
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Medium (md) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+@media (min-width: 768px) {
     .button-group {
         flex-direction: row;
     }
@@ -231,6 +225,10 @@ article#smarter-meetings-description {
     .introduction img {
         width: 394px;
         height: 303px;
+    }
+
+    .top-text {
+        max-width: 339px;
     }
 
     .mid-text {
@@ -251,6 +249,7 @@ article#smarter-meetings-description {
     }
 
     /*Font Breakpoints*/
+
     h1 {
         font-size: 48px;
         font-weight: 900;
@@ -269,7 +268,6 @@ article#smarter-meetings-description {
         font-size: 16px;
         font-weight: 500;
         line-height: 26px;
-
     }
 
     .overline {
@@ -302,33 +300,37 @@ article#smarter-meetings-description {
     }
 }
 
-/* Large (lg) */
-@media (min-width: 1024px) {
-    /* Your styles for the large breakpoint here */
-}
 
-/* Extra Large (xl) */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Tablet (XL) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 @media (min-width: 1280px) {
     .main-text {
         margin-top: 0;
     }
 
+    .top-images {
+        gap: 600px;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 108px;
+        right: 0;
+        left: 0;
+    }
+
+    .top-text {
+        margin: 0 auto 34px auto;
+        max-width: 445px;
+    }
+
     .mid-text {
         max-width: 521px;
-    }
-
-    .hero-left {
-        left: auto;
-    }
-
-    .hero-right {
-        /* empty */
+        margin: 0 auto 32px auto;
     }
 
     #image-gallery * {
         width: 255px;
         height: 242px;
-        margin-bottom: 80px;
     }
 
     .png {
@@ -350,14 +352,15 @@ article#smarter-meetings-description {
 
     #image-gallery {
         gap: 30px;
+        margin-bottom: 80px;
     }
 
     /*Font Breakpoints*/
+
     h1 {
         font-size: 64px;
         font-weight: 900;
         line-height: 64px;
-
     }
 
     h2 {
@@ -384,7 +387,7 @@ article#smarter-meetings-description {
         width: 540px;
         height: 240px;
     }
-
+  
     #smarter-meetings-description h2,
     p {
         margin: 0;
