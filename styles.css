@@ -375,6 +375,7 @@ article#smarter-meetings-description{
     .top-textxcnbv{
         width: 540px;
     }
+    /* fixed issue with sizing */
     .png {
         display: flex;
         justify-content: center;
@@ -395,4 +396,5 @@ article#smarter-meetings-description{
 /* 2XL (2xl) */
 @media (min-width: 1536px) {
     /* Your styles for the 2XL breakpoint here */
+}
 }
