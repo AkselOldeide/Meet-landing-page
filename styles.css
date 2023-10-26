@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: #FAFAFA;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
@@ -26,15 +27,24 @@ body {
     overflow-x: hidden;
 }
 
-.introduction {
-    display: flex;
-    gap: 16px;
-    margin: 0;
+.main-text {
+    position: relative;
 }
 
-.introduction img {
+.top-images {
+    display: flex;
+    gap: 20px;
+}
+
+.top-images img {
     width: 199px;
     height: 153px;
+    gap: 20px;
+}
+
+.introduction {
+    display: block;
+    height: fit-content;
 }
 
 .png {
@@ -43,15 +53,30 @@ body {
     align-items: center;
     margin-top: 64px;
     margin-bottom: 64px;
-    
-     /* flex-direction: column; */
+    /* margin-left: 160px; */
+
+    /* flex-direction: column; */
     /* width: 56px;
     height: 140px; */
 }
 
+.png-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+
+    /* flex-direction: column; */
+}
+
 .top-text {
-    margin: 24px;
+    margin: 0 auto;
     max-width: 287px;
+}
+
+.mid-text {
+    margin: auto;
+    max-width: 300px;
 }
 
 h1 {
@@ -59,6 +84,7 @@ h1 {
     font-weight: 900;
     line-height: 44px;
     color: #28283D;
+    margin: 50px auto 0 auto;
 }
 
 h2 {
@@ -80,6 +106,7 @@ h2 {
 .button-group {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 16px;
     align-items: center;
 }
@@ -100,6 +127,7 @@ h2 {
     color: #8FE3F9;
     font-weight: 900;
     line-height: 26px;
+    width: 193px;
 }
 
 .button-blue:hover {
@@ -117,7 +145,7 @@ h2 {
     font-weight: 900;
     font-size: 16px;
     line-height: 26px;
-    max-width: 139px;
+    width: 139px;
 }
 
 .button-purp:hover {
@@ -128,129 +156,251 @@ h2 {
 
 /*The following GRID only applies to mobile view version*/
 
-#image-gallery *{
+#image-gallery * {
     width: 151px;
     height: 141px;
     border-radius: 8px;
- 
+
 }
 
-#image-gallery{
+#image-gallery {
     display: grid;
     grid-template-columns: 151px 151px;
     grid-template-rows: 141px 141px;
-    grid-template-areas: 
-    "woman-c woman-p"
-    "man-c man-p";
+    grid-template-areas:
+        "woman-c woman-p"
+        "man-c man-p";
     gap: 25px;
+    margin-bottom: 64px;
 }
 
-.woman-computer{
+.woman-computer {
     grid-area: woman-c;
 }
 
-.woman-phone{
+.woman-phone {
     grid-area: woman-p;
 }
 
-.man-computer{
+.man-computer {
     grid-area: map-c;
 }
 
-.man-phone{
+.man-phone {
     grid-area: man-c;
 }
 
-/* Small (sm) */
-@media (min-width: 640px) {
+article#smarter-meetings-description {
+    width: 327px;
+    height: 284px;
 }
 
-/* Medium (md) */
+/**/
+#smarter-meetings-description:nth-child(2) {
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+#smarter-meetings-description #smarter1 {
+    margin: 0px;
+}
+
+#smarter-meetings-description #smarter3 {
+    margin: 0;
+}
+
+/* Small (sm) */
+@media (min-width: 640px) {}
+
+span{
+    padding-right: 4px;
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Medium (md) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 @media (min-width: 768px) {
-    #image-gallery *{
+    .button-group {
+        flex-direction: row;
+    }
+
+    .introduction img {
+        width: 394px;
+        height: 303px;
+    }
+
+    .top-text {
+        max-width: 339px;
+    }
+
+    .mid-text {
+        margin: auto;
+        max-width: 457px;
+    }
+
+    #image-gallery * {
         width: 164px;
         height: 156px;
     }
-    
-    #image-gallery{
+
+    #image-gallery {
         display: flex;
         flex-direction: row;
         gap: 11px;
+        margin-bottom: 48px;
     }
 
-/*Font Breakpoints*/
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 48px;
+    /*Font Breakpoints*/
 
+    h1 {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
+
+    }
+
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 44px;
+
+    }
+
+    body {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .overline {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 26px;
+    }
+
+    /*Spacing Breakpoints - Tablet*/
+    article#smarter-meetings-description {
+        width: 573px;
+        height: 240px;
+    }
+
+    .png {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin-top: 80px;
+        margin-bottom: 67px;
+    }
+
+    .png-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+    }
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 44px;
 
-}
-
-body{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-
-}
-
-.overline{
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 26px;
-}
-}
-
-
-/* Large (lg) */
-@media (min-width: 1024px) {
-    /* Your styles for the large breakpoint here */
-}
-
-/* Extra Large (xl) */
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::Tablet (XL) ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 @media (min-width: 1280px) {
-    #image-gallery *{
+    .main-text {
+        margin-top: 0;
+    }
+
+    .top-images {
+        gap: 600px;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 108px;
+        right: 0;
+        left: 0;
+    }
+
+    .top-text {
+        margin: 0 auto 34px auto;
+        max-width: 445px;
+    }
+
+    .mid-text {
+        max-width: 521px;
+        margin: 0 auto 32px auto;
+    }
+
+    #image-gallery * {
         width: 255px;
         height: 242px;
     }
 
-    #image-gallery{
-        gap: 30px;
+    .png {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 117px;
+        margin-bottom: 64px;
+        width: 56px;
+        height: 140px;
     }
 
-/*Font Breakpoints*/
+    .png-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 72px;
+    }
+
+    #image-gallery {
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .png {
+        margin-top: 110px;
+    }
+
     h1 {
         font-size: 64px;
         font-weight: 900;
         line-height: 64px;
-    
     }
-    
+
     h2 {
         font-size: 40px;
         font-weight: 900;
         line-height: 40px;
 
     }
-    
-    body{
+
+    body {
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;
 
     }
 
-    .overline{
+    .overline {
         font-size: 16px;
         font-weight: 900;
         line-height: 26px;
     }
+
+    article#smarter-meetings-description {
+        width: 540px;
+        height: 240px;
+    }
+  
+    #smarter-meetings-description h2,
+    p {
+        margin: 0;
+    }
+
+    /*Spacing Breakpoints - Desktop*/
+
+    .top-textxcnbv {
+        width: 540px;
+    }
+
 }
 
 /* 2XL (2xl) */
