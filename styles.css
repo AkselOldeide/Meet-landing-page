@@ -59,8 +59,8 @@ body {
     margin-top: 64px;
     margin-bottom: 64px;
     /* margin-left: 160px; */
-    
-     /* flex-direction: column; */
+
+    /* flex-direction: column; */
     /* width: 56px;
     height: 140px; */
 }
@@ -161,62 +161,62 @@ h2 {
 
 /*The following GRID only applies to mobile view version*/
 
-#image-gallery *{
+#image-gallery * {
     width: 151px;
     height: 141px;
     border-radius: 8px;
- 
+
 }
 
-#image-gallery{
+#image-gallery {
     display: grid;
     grid-template-columns: 151px 151px;
     grid-template-rows: 141px 141px;
-    grid-template-areas: 
-    "woman-c woman-p"
-    "man-c man-p";
+    grid-template-areas:
+        "woman-c woman-p"
+        "man-c man-p";
     gap: 25px;
     margin-bottom: 64px;
 }
 
-.woman-computer{
+.woman-computer {
     grid-area: woman-c;
 }
 
-.woman-phone{
+.woman-phone {
     grid-area: woman-p;
 }
 
-.man-computer{
+.man-computer {
     grid-area: map-c;
 }
 
-.man-phone{
+.man-phone {
     grid-area: man-c;
 }
 
-article#smarter-meetings-description{
+article#smarter-meetings-description {
     width: 327px;
     height: 284px;
 }
 
 /**/
-#smarter-meetings-description:nth-child(2){
+#smarter-meetings-description:nth-child(2) {
     margin-top: 24px;
     margin-bottom: 32px;
 }
 
-#smarter-meetings-description #smarter1{
+#smarter-meetings-description #smarter1 {
     margin: 0px;
 }
-#smarter-meetings-description #smarter3{
+
+#smarter-meetings-description #smarter3 {
     margin: 0;
 }
 
 
 /* Small (sm) */
-@media (min-width: 640px) {
-}
+@media (min-width: 640px) {}
 
 /* Medium (md) */
 @media (min-width: 768px) {
@@ -227,7 +227,7 @@ article#smarter-meetings-description{
     .button-group {
         flex-direction: row;
     }
-    
+
     .introduction img {
         width: 394px;
         height: 303px;
@@ -238,66 +238,68 @@ article#smarter-meetings-description{
         max-width: 457px;
     }
 
-    #image-gallery *{
+    #image-gallery * {
         width: 164px;
         height: 156px;
     }
-    
-    #image-gallery{
+
+    #image-gallery {
         display: flex;
         flex-direction: row;
         gap: 11px;
         margin-bottom: 48px;
     }
 
-/*Font Breakpoints*/
-h1 {
-    font-size: 48px;
-    font-weight: 900;
-    line-height: 48px;
+    /*Font Breakpoints*/
+    h1 {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 48px;
 
-}
+    }
 
-h2 {
-    font-size: 40px;
-    font-weight: 900;
-    line-height: 44px;
+    h2 {
+        font-size: 40px;
+        font-weight: 900;
+        line-height: 44px;
 
-}
+    }
 
-body{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
+    body {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
 
-}
+    }
 
-.overline{
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 26px;
-}
-/*Spacing Breakpoints - Tablet*/
-article#smarter-meetings-description{
-    width: 573px;
-    height: 240px;
-}
-.png {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin-top: 80px;
-    margin-bottom: 67px;
-}
+    .overline {
+        font-size: 16px;
+        font-weight: 900;
+        line-height: 26px;
+    }
 
-.png-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 64px;
-}
+    /*Spacing Breakpoints - Tablet*/
+    article#smarter-meetings-description {
+        width: 573px;
+        height: 240px;
+    }
+
+    .png {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-shrink: 0;
+        margin-top: 80px;
+        margin-bottom: 67px;
+    }
+
+    .png-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 64px;
+    }
 }
 
 /* Large (lg) */
@@ -314,67 +316,67 @@ article#smarter-meetings-description{
     .mid-text {
         max-width: 521px;
     }
-    
+
     .hero-left {
         left: auto;
     }
 
-    .hero-right {
-        
-    }
+    .hero-right {}
 
-    #image-gallery *{
+    #image-gallery * {
         width: 255px;
         height: 242px;
         margin-bottom: 80px;
     }
 
-    #image-gallery{
+    #image-gallery {
         gap: 30px;
     }
 
-/*Font Breakpoints*/
+    /*Font Breakpoints*/
     h1 {
         font-size: 64px;
         font-weight: 900;
         line-height: 64px;
-    
+
     }
-    
+
     h2 {
         font-size: 40px;
         font-weight: 900;
         line-height: 40px;
 
     }
-    
-    body{
+
+    body {
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;
 
     }
 
-    .overline{
+    .overline {
         font-size: 16px;
         font-weight: 900;
         line-height: 26px;
     }
 
-    article#smarter-meetings-description{
+    article#smarter-meetings-description {
         width: 540px;
         height: 240px;
     }
 
-    #smarter-meetings-description h2, p{
+    #smarter-meetings-description h2,
+    p {
         margin: 0;
     }
-    
-/*Spacing Breakpoints - Desktop*/
 
-    .top-textxcnbv{
+    /*Spacing Breakpoints - Desktop*/
+
+    .top-textxcnbv {
         width: 540px;
     }
+
     /* fixed issue with sizing */
     .png {
         display: flex;
@@ -385,13 +387,13 @@ article#smarter-meetings-description{
         width: 56px;
         height: 140px;
     }
+
     .png-2 {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 72px;
-
-}
+    }
 }
 
 /* 2XL (2xl) */
