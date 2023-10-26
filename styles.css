@@ -321,12 +321,31 @@ article#smarter-meetings-description {
         left: auto;
     }
 
-    .hero-right {}
+    .hero-right {
+        /* empty */
+    }
 
     #image-gallery * {
         width: 255px;
         height: 242px;
         margin-bottom: 80px;
+    }
+
+    .png {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 117px;
+        margin-bottom: 64px;
+        width: 56px;
+        height: 140px;
+    }
+
+    .png-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 72px;
     }
 
     #image-gallery {
@@ -377,23 +396,6 @@ article#smarter-meetings-description {
         width: 540px;
     }
 
-    /* fixed issue with sizing */
-    .png {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 117px;
-        margin-bottom: 64px;
-        width: 56px;
-        height: 140px;
-    }
-
-    .png-2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 72px;
-    }
 }
 
 /* 2XL (2xl) */
