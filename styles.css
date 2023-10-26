@@ -355,7 +355,9 @@ span{
         margin-bottom: 80px;
     }
 
-    /*Font Breakpoints*/
+    .png {
+        margin-top: 110px;
+    }
 
     h1 {
         font-size: 64px;
